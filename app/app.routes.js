@@ -1,6 +1,6 @@
 var myApp = angular.module("myApp");
 
-myApp.config(function($routeProvider, $locationProvider) {
+myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
     .when("/", {
         controller: "homeController",
@@ -9,4 +9,4 @@ myApp.config(function($routeProvider, $locationProvider) {
     .otherwise({
         redirectTo: '/'
     });
-});
+}]);
