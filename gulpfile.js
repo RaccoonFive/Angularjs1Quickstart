@@ -1,5 +1,8 @@
 var gulp = require('gulp');
+var concat = require('gulp-concat');
 
 gulp.task('default', function() {
-  // place code for your default task here
+  return gulp.src('app/**/*.js')
+  .pipe(concat('app.js'))
+  .pipe(gulp.dest('./dist/'));
 });
