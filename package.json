@@ -1,10 +1,10 @@
 {
   "name": "angularjs1-quickstart",
   "version": "1.0.0",
-  "description": "",
+  "description": "Just a starting template for angularjs 1",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp watch"
+    "start": "concurrently \"gulp watch\" \"http-server -c-1\""
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/RaccoonFive/Angularjs1Quickstart#readme",
   "devDependencies": {
+    "concurrently": "^3.1.0",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1"
+    "gulp-concat": "^2.6.1",
+    "http-server": "^0.9.0"
   }
 }
