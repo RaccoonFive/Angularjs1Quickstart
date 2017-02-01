@@ -4,7 +4,7 @@
   "description": "Just a starting template for angularjs 1",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "concurrently \"gulp watch\" \"http-server -c-1\""
+    "start": "concurrently \" gulp \"  \"gulp watch\" \"http-server -c-1 -o -a localhost\""
   },
   "repository": {
     "type": "git",
